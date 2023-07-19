@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.regText{
+    color:#ffc400ef;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+body{
+    font-family: "Montserrat",
+    sans-serif;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+     url(./../image/storage-login.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box{
+    border-radius: 20px;
+    width: 300px;
+    padding: 30px;
+    /* border: 2xp solid orangered; */
+    background-color:rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 2px #ffc400ef;
+    display: flex;
+    flex-direction: column;
+}
+
+.animated-word{
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.castom-latter{
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor:grab;
+    color:#fff;
+}
+.castom-latter:hover{
+    transform: translateY(-1rem);
+    background: -webkit-linear-gradient(120deg, hsl(19,90%,52%),hsl(56,100%,50%));
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.username,
+.password{
+    position: relative;
+}
+
+.fa-envelope,
+.fa-lock-open{
+    position: absolute;
+    left: 20px;
+    top:40px;
+    color: rgb(256,256,256);
+}
+
+.box input[type='text'],
+.box input[type='password']{
+    font-size: 20px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: all .2s ease-in;
+}
+
+.box input[type='text']:focus,
+.box input[type='password']:focus{
+    width: 250px;
+    border-color: #ffc400ec;
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginBtn{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border:3px solid #ffc400ec;
+    padding: 14px 35px;
+    font-size: 18px;
+    color: rgb(256, 256, 256);
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#loginBtn:hover{
+    background-color:#ffc400ca;
+}
+.error-message{
+    color: red
+}

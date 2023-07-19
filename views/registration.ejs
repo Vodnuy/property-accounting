@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/registration.css" />
+    <script defer type="text/javascript" src="/js/registrationScripts.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/registration" id="registrationForm" class="box" method="post">
+            <div class="animated-word">
+                <div class="castom-latter">R</div>
+                <div class="castom-latter">E</div>
+                <div class="castom-latter">G</div>
+                <div class="castom-latter">I</div>
+                <div class="castom-latter">S</div>
+                <div class="castom-latter">T</div>
+                <div class="castom-latter">R</div>
+                <div class="castom-latter">A</div>
+                <div class="castom-latter">T</div>
+                <div class="castom-latter">I</div>
+                <div class="castom-latter">O</div>
+                <div class="castom-latter">N</div>
+            </div>
+            <!-- User Input -->
+            <div class="username">
+                <input type="text" placeholder="Enter Username" id="username" name="username">
+                <i class="far fa-envelope"></i>
+            </div>
+            <!-- Passwowrd input -->
+            <div class="password">
+                <input type="password" placeholder="Enter Password" id="password" name="password">
+                <i class="fas fa-lock-open"></i>
+                <small id="registration-error-message" class="error-message"></small>
+            </div>
+
+            <!-- Button -->
+            <button id="registrationBtn" type="btn-primary">зареєструватись</button>
+
+            <a href="./login" class="regText">увійти</a>
+
+
+        </form>
+    </div>
+
+    <script src="./../index.js"> </script>
+</body>
+</html>
